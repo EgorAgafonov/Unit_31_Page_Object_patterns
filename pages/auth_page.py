@@ -7,7 +7,7 @@ from .locators import AuthLocators
 
 class AuthPage(BasePage):
 
-    def __init__(self, driver,timeout=10):
+    def __init__(self, driver, timeout=10):
         super().__init__(driver, timeout)
         url = os.getenv("LOGIN_URL") or "http://petfriends1.herokuapp.com/login"
         driver.get(url)
@@ -24,7 +24,3 @@ class AuthPage(BasePage):
 
     def btn_click(self):
         self.btn.click()
-
-
-
-
