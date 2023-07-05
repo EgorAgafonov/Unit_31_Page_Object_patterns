@@ -11,7 +11,7 @@ from urllib.parse import urlparse
 
 class BasePage(object):
     # конструктор класса - специальный метод с ключевым словом __init__
-    # Нам нужны объект веб-драйвера, адрес страницы и время ожидани элементов
+    # Нам нужны объект веб-драйвера, адрес страницы и время ожидании элементов
     def __init__(self, driver, url, timeout=10):
         self.driver = driver
         self.url = url
