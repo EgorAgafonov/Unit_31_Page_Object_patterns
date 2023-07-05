@@ -4,7 +4,7 @@ import time
 def test_auth_page(selenium):
     page = AuthPage(selenium)
     page.enter_email("fonovagafonov@yandex.ru")
-    page.enter_pass("123456")
+    page.enter_pass("12345")
     page.btn_click()
 
     # знак != или == будет зависеть от того, верные или неверные данные мы вводим

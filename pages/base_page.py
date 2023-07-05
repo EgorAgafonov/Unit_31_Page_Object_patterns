@@ -12,7 +12,7 @@ from urllib.parse import urlparse
 class BasePage(object):
     """Базовый класс для предполагаемой, абстрактной страницы в рамках изучения темы Page object."""
 
-    def __init__(self, driver, url, timeout=10):
+    def __init__(self, driver, url, timeout=2):
         """Метод __init__ будет запускать в момент создания объекта из класса и устанавливать нужные свойства.
         driver.implicitly_wait(10) — задаёт максимальное время ожидания в секундах, в течении которого WebDriver
          пытается найти элемент, если он недоступен сразу же."""
